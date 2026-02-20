@@ -6,3 +6,97 @@
   font-weight: 400;
   font-style: normal;
 }
+/* shared style */
+.display-flex{
+  display: flex;
+}
+/* dark-02 */
+.text-gray{
+  color: #424242;
+}
+/* dark-03 */
+.text-light-gray{
+  color: #727272;
+
+  
+}
+/* sob button ei style ta use korbo tai shared style hishebe ei class ta sob button e bosabo */
+.btn-primary{
+  background-color: rgba(255, 144, 14, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 20px 25px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 8px;
+
+}
+/* primary background */
+.bg-light{
+  background-color:rgba(255, 144, 14, 0.1);
+}
+/* navbar styles */
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+.brand{
+  font-weight: 700;
+  /* font er (1 rem=16px )
+  45px/16px=3rem */
+  
+  font-size: 3rem;
+}
+/* ul er moddhe li gulo */
+.nav-item{
+  list-style: none;
+  margin-right: 30px;
+}
+/* ul er class ta */
+.nav-link{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  
+}
+
+.navbar, .banner{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* banner related style */
+.banner-content{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+
+}
+.banner-tittle{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner-description{
+  font-size: 1rem;
+}
+/* img er width er karone banner content e btn er margin bottom kaj korchena tai alada kore margin-bottom dite holo */
+.banner-content button{
+  margin-bottom: 50px;
+}
+
+/* (banner-img)
+banner-content e max-width:850px use korar karone img ta oi px ke overwrite koreche tai banner img ta margin right niye niche */
+.banner-content img{
+ width: 100%;
+
+ 
+}
+/* responsive media query */
+@media screen and (max-width:576px) {
+  .navbar, .nav-link{
+    flex-direction: column;
+  }
+  
+}
