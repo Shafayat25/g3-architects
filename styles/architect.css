@@ -163,6 +163,22 @@ banner-content e max-width:850px use korar karone img ta oi px ke overwrite kore
   margin-top: 24px;
   margin-bottom: 100px;
 }
+/* sponsors related style */
+.sponsor-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+.sponsor-companies{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 150px;
+  justify-content: center;
+}
+/* image gray korar jonno css e "filter" property dite hobe */
+.sponsor-companies img{
+  filter: grayscale(100%);
+}
 
 /* responsive media query */
 @media screen and (max-width:576px) {
@@ -171,9 +187,16 @@ banner-content e max-width:850px use korar karone img ta oi px ke overwrite kore
   .team{
     flex-direction: column;
   }
-  .team-img-container{
-    grid-template-columns: repeat(1,1fr);
-    margin-left: 20px;
+  .team-img-container, .facts-container, .our-features,.sponsor-companies{
+    grid-template-columns: 1fr;
+    
+  }
+  .facts-container{
+    justify-items: center;
+    gap: 24px;
+  }
+  .our-features{
+    margin-left: 24px;
   }
   
 }
@@ -184,6 +207,10 @@ banner-content e max-width:850px use korar karone img ta oi px ke overwrite kore
   }
   .our-features{
     margin-left: 50px auto;
+  }
+  .sponsor-companies, .facts-container{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
   
 }
