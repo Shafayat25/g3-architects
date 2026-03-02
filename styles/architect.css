@@ -132,6 +132,7 @@ banner-content e max-width:850px use korar karone img ta oi px ke overwrite kore
 /* features-section related styles*/
 .features{
   gap: 50px;
+
 }
 #feature-section-tittle{
   border-left:5px solid #FF900E ;
@@ -150,6 +151,22 @@ banner-content e max-width:850px use korar karone img ta oi px ke overwrite kore
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06) ;
   margin-bottom: 20px;
   
+}
+#experience-badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  /* button e negative value deyar fole left side e margin niye pichone asche and top margin niyeo pichne asche */
+  margin-left: -100px;
+  margin-top: -100px;
+}
+#experience-year{
+  font-size: 4rem;
+  font-weight: 600;
+
+}
+.feature-architect img{
+  width: 100%;
 }
 /* some facts related style */
 .facts-container{
@@ -196,17 +213,38 @@ banner-content e max-width:850px use korar karone img ta oi px ke overwrite kore
   grid-template-columns: repeat(5, 1fr);
   gap: 150px;
   justify-content: center;
+  
 }
 /* image gray korar jonno css e "filter" property dite hobe */
 .sponsor-companies img{
   filter: grayscale(100%);
 }
-
+footer{
+  max-width: 1440px;
+  height: 100px;
+  background: rgba(255, 244, 231, 1);
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  
+  
+  padding: 30px 30px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+footer h6{
+  font-size: 1.4rem;
+  /* padding: 30px 100px 100px 30px; */
+ 
+  
+  
+}
 /* responsive media query */
 @media screen and (max-width:576px) {
   .navbar,
    .nav-link,
-  .team{
+   .features,
+  .team,.footer{
     flex-direction: column;
   }
   .team-img-container, .facts-container, .our-features,.sponsor-companies{
@@ -220,11 +258,16 @@ banner-content e max-width:850px use korar karone img ta oi px ke overwrite kore
   .our-features{
     margin-left: 24px;
   }
+  #experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
   
 }
 /* medium size device */
 @media screen and (min-width:576px) and (max-width:992px) {
-  .team{
+  .team,.features{
     flex-direction: column;
   }
   .our-features{
@@ -233,6 +276,10 @@ banner-content e max-width:850px use korar karone img ta oi px ke overwrite kore
   .sponsor-companies, .facts-container{
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+  }
+  #experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
   }
   
 }
